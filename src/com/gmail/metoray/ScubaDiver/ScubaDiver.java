@@ -15,7 +15,7 @@ public class ScubaDiver extends JavaPlugin {
 	Logger log;
 	
     public void onEnable() {
-        getServer().getPluginManager().registerEvents(new PlayerListener(), this);
+        getServer().getPluginManager().registerEvents(new EntityListener(), this);
 		log = this.getLogger();
 		log.info("Scubadiver has been enabled! :)");
     }
