@@ -14,6 +14,9 @@ public class EntityListener implements Listener {
 			return;
 		}
 		Player p = (Player)event.getEntity();
+		if(p.getInventory().getHelmet()==null){
+			return;
+		}
 		if(p.getInventory().getHelmet().getType()==Material.GLASS){
 			event.setCancelled(true);
 		}
