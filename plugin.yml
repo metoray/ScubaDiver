@@ -1,0 +1,7 @@
+name: ScubaDiver
+main: com.gmail.metoray.ScubaDiver.ScubaDiver
+version: 0.2.3
+commands:
+   scuba:
+      description: Put a glass block on your head and start divin'!
+      usage: /scuba
