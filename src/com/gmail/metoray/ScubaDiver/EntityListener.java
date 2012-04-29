@@ -17,6 +17,9 @@ public class EntityListener implements Listener {
 		if(p.getInventory().getHelmet()==null){
 			return;
 		}
+		if(event.getCause()!=DamageCause.DROWNING){
+			return;
+		}
 		if(p.getInventory().getHelmet().getType()==Material.GLASS){
 			event.setCancelled(true);
 		}
